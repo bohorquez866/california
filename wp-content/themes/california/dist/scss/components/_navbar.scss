@@ -1,0 +1,85 @@
+.navbar {
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    &,
+    &__list,
+    &__tags,
+    &__tags li {
+        @extend .is-flex;
+        align-items: center;
+    }
+    & .logo {
+        & img {
+            width: 125px;
+            height: 65px;
+        }
+    }
+    &__list {
+        column-gap: 4.5rem;
+        @include mq($bpLarge) {
+            column-gap: 2rem;
+        }
+        & li,
+        & li a {
+            @extend .text;
+            @extend .text-semibold;
+        }
+        & li a {
+            position: relative;
+            @include transition;
+            &::before {
+                @include transition;
+                position: absolute;
+                opacity: 0;
+                left: -1rem;
+                top: 7px;
+                content: '';
+                border-radius: 3rem;
+                width: 7px;
+                height: 7px;
+                background-color: $green;
+            }
+            &:hover {
+                color: $green;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__tags {
+        & li {
+            @include transition;
+            cursor: pointer;
+            font-size: 2.5rem;
+            color: $white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6rem;
+            width: 4.6rem;
+            height: 4.6rem;
+            background-color: red;
+            &:nth-child(1) {
+                background-color: red;
+                &:hover {
+                    background-color: $redDark;
+                }
+            }
+            &:nth-child(2) {
+                background-color: $purple;
+                &:hover {
+                    background-color: $purpleDark;
+                }
+            }
+            &:nth-child(3) {
+                background-color: $green;
+                &:hover {
+                    background-color: $greenDark;
+                }
+            }
+            &:not(:last-of-type) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}

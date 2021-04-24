@@ -1,0 +1,30 @@
+.text {
+    font-size: 17px;
+    line-height: 14px;
+    &-semibold {
+        font-weight: 600;
+    }
+}
+
+.title,
+h1 {
+    width: 100%;
+    color: $white;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 47px;
+}
+
+.title-2,
+h2 {
+    font-weight: 400;
+}
+
+.title-3 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.title-wrapper {
+    position: relative;
+}

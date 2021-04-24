@@ -1,0 +1,128 @@
+.store {
+    @include container-130;
+    @include mq($bpLarge) {
+        @include container-120;
+    }
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    & .title-wrapper {
+        margin-left: 10rem;
+        &>p {
+            font-family: $font_01;
+            font-weight: 300;
+            font-size: 2rem;
+            font-style: italic;
+            padding-top: 1rem;
+            color: $black;
+        }
+    }
+    & h2 {
+        margin-bottom: 2rem;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5.1rem;
+            height: 6px;
+            background-color: $green;
+            bottom: -1.5rem;
+            left: 0;
+        }
+        & p {
+            color: $black;
+        }
+        & span {
+            color: $green;
+        }
+    }
+    &__cards {
+        margin-top: 6.6rem;
+        @extend .is-flex;
+        justify-content: space-between;
+        position: relative;
+        &:not(:last-of-type) {
+            margin-bottom: 7rem;
+        }
+        & .store__arrow {
+            position: absolute;
+            cursor: pointer;
+            @include transition;
+            width: 5rem;
+            top: 30%;
+            &.prev {
+                left: -6rem;
+                &:hover {
+                    left: -8rem;
+                }
+            }
+            &.next {
+                & img {
+                    margin-left: auto;
+                }
+                right: -6rem;
+                &:hover {
+                    right: -8rem;
+                }
+            }
+        }
+        //
+        & .store__card {
+            overflow: hidden;
+            width: 23rem;
+            border-radius: 1rem;
+            box-shadow: 0px -1px 20px -12px rgba(168, 165, 168, 1);
+            padding-bottom: 2rem;
+            &>*:not(figure) {
+                padding-left: 2rem;
+            }
+            & figure {
+                margin-bottom: 2rem;
+                overflow: hidden;
+                height: 23rem;
+            }
+            & img {
+                @include transition;
+                width: 100%;
+            }
+            &:hover img {
+                transform: scale(1.1);
+            }
+            & h3 {
+                font-weight: normal;
+                font-size: 1.9rem;
+                margin-bottom: .5rem;
+            }
+            & strong {
+                color: $green;
+                font-weight: 600;
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+.proms {
+    &>div {
+        @include container-130;
+    }
+    & .title-wrapper {
+        width: fit-content;
+        @include margin-x;
+        & h2 {
+            text-align: center;
+            &::before {
+                left: calc(50% - 51px);
+            }
+        }
+    }
+    & .store__cards {
+        @extend .is-flex;
+        justify-content: center;
+        column-gap: 67px;
+        margin-bottom: 13rem;
+        column-gap: 6.7rem;
+        & .store__card {
+            width: 32rem;
+        }
+    }
+}

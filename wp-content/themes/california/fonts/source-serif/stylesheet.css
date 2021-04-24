@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-It.eot');
+    src: url('SourceSerifPro-It.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-It.woff2') format('woff2'),
+        url('SourceSerifPro-It.woff') format('woff'),
+        url('SourceSerifPro-It.ttf') format('truetype'),
+        url('SourceSerifPro-It.svg#SourceSerifPro-It') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-Bold.eot');
+    src: url('SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-Bold.woff2') format('woff2'),
+        url('SourceSerifPro-Bold.woff') format('woff'),
+        url('SourceSerifPro-Bold.ttf') format('truetype'),
+        url('SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-Light.eot');
+    src: url('SourceSerifPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-Light.woff2') format('woff2'),
+        url('SourceSerifPro-Light.woff') format('woff'),
+        url('SourceSerifPro-Light.ttf') format('truetype'),
+        url('SourceSerifPro-Light.svg#SourceSerifPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-SemiBoldIt.eot');
+    src: url('SourceSerifPro-SemiBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-SemiBoldIt.woff2') format('woff2'),
+        url('SourceSerifPro-SemiBoldIt.woff') format('woff'),
+        url('SourceSerifPro-SemiBoldIt.ttf') format('truetype'),
+        url('SourceSerifPro-SemiBoldIt.svg#SourceSerifPro-SemiBoldIt') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-LightIt.eot');
+    src: url('SourceSerifPro-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-LightIt.woff2') format('woff2'),
+        url('SourceSerifPro-LightIt.woff') format('woff'),
+        url('SourceSerifPro-LightIt.ttf') format('truetype'),
+        url('SourceSerifPro-LightIt.svg#SourceSerifPro-LightIt') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-SemiBold.eot');
+    src: url('SourceSerifPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-SemiBold.woff2') format('woff2'),
+        url('SourceSerifPro-SemiBold.woff') format('woff'),
+        url('SourceSerifPro-SemiBold.ttf') format('truetype'),
+        url('SourceSerifPro-SemiBold.svg#SourceSerifPro-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('SourceSerifPro-Regular.eot');
+    src: url('SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SourceSerifPro-Regular.woff2') format('woff2'),
+        url('SourceSerifPro-Regular.woff') format('woff'),
+        url('SourceSerifPro-Regular.ttf') format('truetype'),
+        url('SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

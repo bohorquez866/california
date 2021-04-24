@@ -1,0 +1,115 @@
+.contact {
+    background-image: url(../../templates/src/assets/img/contact.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    padding-bottom: 14rem;
+    position: relative;
+    mix-blend-mode: multiply;
+    & *:not(input) {
+        position: relative;
+        color: $white;
+        z-index: 10;
+    }
+    & .bg--purple {
+        z-index: 5;
+        @include bg;
+        background-color: $purpleContact;
+        background-blend-mode: multiply;
+        opacity: .8;
+    }
+    &__slider {
+        line-height: 28px;
+        padding-top: 12rem;
+        text-align: center;
+        font-size: 18px;
+        width: 49rem;
+        position: relative;
+        @include margin-x;
+        margin-bottom: 22.6rem;
+        &--item {
+            & img {
+                width: 9rem;
+                height: 9rem;
+                object-fit: cover;
+                @include margin-x;
+                border-radius: 50rem;
+                margin-bottom: 2rem;
+            }
+        }
+        & h4 {
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        & strong {
+            margin-top: 4rem;
+            display: block;
+        }
+        & .slider-counter {
+            @extend .is-flex;
+            justify-content: center;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: -4rem;
+            left: 45%;
+            & span {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 3rem;
+                background-color: $white;
+                &.active {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+    &__lower {
+        @extend .is-flex;
+        justify-content: space-between;
+        padding: 0 20.83%;
+        @include mq($bpLarge) {
+            padding: 0 10%;
+        }
+        & h3 {
+            font-size: 4rem;
+            font-weight: normal;
+            height: fit-content;
+            & span {
+                color: $green;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 5.1rem;
+                height: 6px;
+                background-color: $green;
+                bottom: -2rem;
+                left: 0;
+            }
+        }
+        & .contact__form {
+            @extend .is-flex;
+            flex-direction: column;
+            width: 47.5rem;
+            & .contact__input,
+            .contact__textarea {
+                padding: 2rem;
+                outline: none;
+                margin-bottom: 2.5rem;
+                border: 1px solid $white;
+                background-color: transparent;
+                @include transition;
+                color: $white;
+                &::placeholder {
+                    color: $white;
+                    font-family: $font_01;
+                }
+                &:hover {
+                    background-color: $purpleInput;
+                }
+            }
+            & .contact__textarea {
+                height: 12rem;
+            }
+        }
+    }
+}

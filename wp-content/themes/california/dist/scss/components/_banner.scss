@@ -1,0 +1,108 @@
+.banner {
+    position: relative;
+    @extend .is-flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../templates/src/assets/img/banner.jpg)rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    &__content {
+        position: relative;
+        z-index: 10;
+        @include container-100;
+        text-align: center;
+        @extend.is-flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 95px);
+        & form {
+            width: 98.8%;
+            @extend .is-flex;
+            justify-content: space-between;
+            text-align: initial;
+            & input {
+                border: none;
+                outline: none;
+                border-radius: 2rem;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            & input[type="text"] {
+                font-family: $font_01;
+                width: 75%;
+                font-weight: 400;
+                margin-left: 1rem;
+                padding-left: 2.5rem;
+            }
+        }
+    }
+    & .bg {
+        width: 100%;
+        height: calc(100vh - 95px);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    & .bg-black {
+        background: $black;
+        opacity: .7;
+    }
+    & h1 {
+        position: relative;
+        align-self: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 4rem;
+    }
+    & h1+.description {
+        text-align: center;
+        max-width: 75%;
+        margin-bottom: 9.6rem;
+        color: $white;
+        font-size: 2.3rem;
+        font-family: $font_01;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.banner-green {
+    background: url(../../templates/src/assets/img/banner2.jpg);
+    position: relative;
+    height: 40rem;
+    background-position: center center;
+    background-attachment: fixed;
+    @extend .is-flex;
+    align-items: center;
+    justify-content: center;
+    &>* {
+        position: relative;
+        z-index: 10;
+    }
+    & * {
+        color: $white;
+    }
+    & .content {
+        & h3 {
+            font-size: 4rem;
+            max-width: 41rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            & span {
+                font-weight: 600;
+            }
+        }
+        & .description {
+            font-weight: 600;
+            font-style: italic;
+            width: 70%;
+        }
+    }
+    & .bg--green {
+        position: absolute;
+        z-index: 5;
+        @include bg;
+        width: 100%;
+        background-color: transparentize($green, 0.2);
+    }
+}

@@ -1,0 +1,42 @@
+.is-flex {
+    display: flex;
+}
+
+.btn {
+    color: $white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &--search {
+        background-color: $purple;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 1.7rem;
+        font-family: $font_01;
+    }
+    &--banner-2 {
+        border: 2px solid $white;
+        margin-left: 20rem;
+        display: block;
+        padding: 1.5rem 6rem;
+        @include transition;
+        font-size: 1.7rem;
+        &:hover {
+            background-color: $purple;
+            border-color: $purple;
+        }
+    }
+    &--contact {
+        background-color: $green;
+        @include transition;
+        padding: 2rem 0;
+        display: inline;
+        max-width: 17rem;
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+}
